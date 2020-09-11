@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Counterparty</string>
+    <string name="profile_is_add">Профиль добавлен</string>
+    <string name="profile_edit">Профиль изменен</string>
+    <string name="profile_delete">Данный профиль удален</string>
+    <string name="required_fields_tv">Поля со * обязательны</string>
+    <string name="fio_tv">FIO*</string>
+    <string name="phone_tv">Phone*</string>
+    <string name="email_tv">Email</string>
+    <string name="description_tv">Description</string>
+    <string name="save_btn">Save</string>
+    <string name="dont_fill_required_fields">Заполните обязательные поля</string>
+</resources>

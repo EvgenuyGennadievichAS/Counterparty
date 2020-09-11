@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/logo_person_iv"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_height="150dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/name_person_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:nextFocusForward="@id/phone_person_tv"
+                android:textSize="20dp"
+                tools:text="Name" />
+
+            <EditText
+                android:id="@+id/phone_person_tv"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                tools:text ="Phone"
+                android:nextFocusForward="@id/email_person_tv"/>
+            <EditText
+                android:id="@+id/email_person_tv"
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20dp"
+                android:gravity="center"
+                tools:text ="Email"
+                android:nextFocusForward="@id/description_person_tv"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/description_person_tv"
+            android:focusable="false"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text ="Описание"
+            android:singleLine="true"/>
+
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linear_accept"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/accept_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_accept_edit"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/cancel_edit"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_cancel_edit"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_edit"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/edit_person"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_edit"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/delete_person_im"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/btn_delete"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
